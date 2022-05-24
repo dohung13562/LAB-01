@@ -20,5 +20,8 @@
   "homepage": "https://github.com/dohung13562/LAB-01#readme",
   "devDependencies": {
     "lite-server": "^2.2.2"
+  },
+  "dependencies": {
+    "create-react-app": "^5.0.1"
   }
 }
