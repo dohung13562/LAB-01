@@ -29,22 +29,22 @@ class Header extends Component {
 
     handleLogin(event) {
         this.toggleModal();
-        alert("Username: " + this.username.value + " Password: " + this.password.value 
-        + " Remember: " + this.remember.checked);
+        alert("Username: " + this.username.value + " Password: " + this.password.value
+            + " Remember: " + this.remember.checked);
         event.preventDefault();
     }
 
     render() {
         return (
-            <>
+            <div>
                 <Navbar dark expand="md">
                     <div className='container'>
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href='/'>
-                            <img src="assets/images/logo.png" height="30" width="41"
-                                alt="Ristorante Con Fusion" />
-                        </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <NavbarBrand className="mr-auto" href='/'>
+                                <img src="assets/images/logo.png" height="30" width="41"
+                                    alt="Ristorante Con Fusion" />
+                            </NavbarBrand>
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
@@ -93,7 +93,7 @@ class Header extends Component {
                         <Form onSubmit={this.handleLogin}>
                             <FormGroup>
                                 <Label htmlFor="username">Username</Label>
-                                <Input type="text" id="username" name="username" 
+                                <Input type="text" id="username" name="username"
                                     innerRef={(input) => this.username = input} />
                             </FormGroup>
                             <FormGroup>
@@ -104,7 +104,7 @@ class Header extends Component {
                             <FormGroup>
                                 <Label>
                                     <Input type="checkbox" name="remember"
-                                    innerRef={(input) => this.remember = input} />
+                                        innerRef={(input) => this.remember = input} />
                                     Remember me
                                 </Label>
                             </FormGroup>
@@ -112,8 +112,9 @@ class Header extends Component {
                         </Form>
                     </ModalBody>
                 </Modal>
-            </>
+            </div>
         );
+        
     }
 }
 
