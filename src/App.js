@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ConfigureStore } from './redux/configureStore';
 import Main from './components/MainComponent';
+import rvLAB from './components/rvLAB';
 
 const store = ConfigureStore();
 
@@ -15,6 +16,7 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Main />
+            <rvLAB />
           </div>
         </BrowserRouter>
       </Provider>

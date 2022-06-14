@@ -8,6 +8,7 @@ import Footer from './FooterComponent';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import Menu from './MenuComponent';
+import rvLAB from './rvLAB';
 import { addComment, fetchDishes } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
 
